@@ -50,7 +50,7 @@ IMPORTANT : stop Transmission before changing those lines or it will overwrite c
 
 I will use a script at launch to check that torrent notifications are still active as I don't trust anything in life
 
-**Location** : /DATA/APPDATA/transmission/config
+**Location** : /DATA/AppData/transmission/config
 
 
 ## Cron
