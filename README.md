@@ -12,39 +12,40 @@ I use mergerfs to pool together 2 docks composed of 4 hard-drives
 They are mounted via fstab to /mnt/disk-A1 to /mnt/disk-B4
 Letter is the dock identifier and number is the disk position from left to right
 
-Location : /etc/fstab
+**Location** : /etc/fstab
 
 ### Snapraid
 To ensure some disk parity, i use snapraid
 Every day, it will update the parity disk and check the state
 
-Location : /scripts/
+**Location** : /scripts/
 
 ### SMART state
 My disks may one day fail, so we will use SMART to get their state everyday
 
-Location : /scripts/
+**Location** : /scripts/
 
 ### Archive Backup
 I use Swissbackup as a storage for my backups with rclone service
 
-Location : /scripts/
+**Location** : /scripts/
 
 ## Torrent
 I want to be notified when my Linux distros are there so I can enjoy them, so i will use a function of the settings.json file in /DATA/APPDATA/transmission/config folder to execute script at start/end of downloading
 
 Those 4 lines are changed :
-  >"script-torrent-added-enabled": true,
-  >"script-torrent-added-filename": "/config/torrentstart.sh",
-  >"script-torrent-done-enabled": true,
-  >"script-torrent-done-filename": "/config/torrentdone.sh",
-  >"script-torrent-done-seeding-enabled": false,
+
+>"script-torrent-added-enabled": true,
+>"script-torrent-added-filename": "/config/torrentstart.sh",  
+>"script-torrent-done-enabled": true,  
+>"script-torrent-done-filename": "/config/torrentdone.sh",  
+>"script-torrent-done-seeding-enabled": false,
 
 IMPORTANT : stop Transmission before changing those lines or it will overwrite config changes at shutdown (took me too much time to understand that, drove me crazy)
 
 I will use a script at launch to check that torrent notifications are still active as I don't trust anything in life
 
-Location : /DATA/APPDATA/transmission/config
+**Location** : /DATA/APPDATA/transmission/config
 
 
 ## Cron
@@ -52,6 +53,6 @@ Everything maintenance-related is started via crontab.
 Edit via 
   sudo crontab -e
 
-Example in /crontab file
+**Example at** /crontab
 
 
