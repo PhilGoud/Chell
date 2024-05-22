@@ -1,5 +1,5 @@
 # Chell
-Description and scripts used on my homeserver
+Description and scripts used on my homeserver named Chell
 I am a little bit ADHD, so i won't think about checking things, i will use Telegram to keep me informed
 
 ## A little background
