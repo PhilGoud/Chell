@@ -8,11 +8,11 @@ Most of my apps will be in docker containers, except system functions
 
 ## Storage
 ### Mergerfs
-I use mergerfs to pool together a LOT of disks
+I use mergerfs to pool together 2 docks composed of 4 hard-drives
 They are mounted via fstab to /mnt/disk-A1 to /mnt/disk-B4
 Letter is the dock identifier and number is the disk position from left to right
 
-Location : /scripts/
+Location : /etc/fstab
 
 ### Snapraid
 To ensure some disk parity, i use snapraid
