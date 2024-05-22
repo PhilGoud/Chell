@@ -32,6 +32,7 @@ Location : /scripts/
 
 ## Torrent
 I want to be notified when my Linux distros are there so I can enjoy them, so i will use a function of the settings.json file in /DATA/APPDATA/transmission/config folder to execute script at start/end of downloading
+
 Those 4 lines are changed :
   "script-torrent-added-enabled": true,
   "script-torrent-added-filename": "/config/torrentstart.sh",
