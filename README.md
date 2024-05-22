@@ -3,12 +3,17 @@ Description and scripts used on my homeserver named Chell
 I won't think about checking things daily, so I will use Telegram to keep me informed
 
 ## A little background
-I use a Lenovo M73 with Debian 12 with CasaOS on top of it
+I use a Lenovo M73 with Debian 12 with CasaOS on top of it  
+
+Connected to it is :
+- 1 USB 2.0 HDD used for parity
+- 2 USB 3.0 docks composed of 4 HDDs
+  
 Most of my apps will be in docker containers, except system functions
 
 ## Storage
 ### Mergerfs
-I use mergerfs to pool together 2 docks composed of 4 hard-drives
+I use mergerfs to pool together the 2 docks composed of 4 hard-drives
 They are mounted via fstab to /mnt/disk-A1 to /mnt/disk-B4
 Letter is the dock identifier and number is the disk position from left to right
 
