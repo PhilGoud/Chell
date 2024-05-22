@@ -26,7 +26,16 @@ My disks may one day fail, so we will use SMART to get their state everyday
 Location : /scripts/
 
 ## Torrent
-I want to be notified when my Linux distros are there so I can enjoy them
+I want to be notified when my Linux distros are there so I can enjoy them, so i will use a function of the settings.json file in /DATA/APPDATA/transmission/config folder to execute script at start/end of downloading
+Those 4 lines are changed :
+  "script-torrent-added-enabled": true,
+  "script-torrent-added-filename": "/config/torrentstart.sh",
+  "script-torrent-done-enabled": true,
+  "script-torrent-done-filename": "/config/torrentdone.sh",
+  "script-torrent-done-seeding-enabled": false,
+
+IMPORTANT : stop Transmission before changing those lines or it will overwrite config changes at shutdown (took me too much time to understand that, drove me crazy)
+  
 I will use a script at launch to check that torrent notifications are still active as I don't trust anything in life
 
 Location : /DATA/APPDATA/transmission/config
