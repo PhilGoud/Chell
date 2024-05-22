@@ -1,6 +1,6 @@
 # Chell
 Description and scripts used on my homeserver named Chell
-I am a little bit ADHD, so i won't think about checking things, i will use Telegram to keep me informed
+I won't think about checking things daily, so I will use Telegram to keep me informed
 
 ## A little background
 I use a Lenovo M73 with Debian 12 with CasaOS on top of it
