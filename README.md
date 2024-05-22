@@ -9,7 +9,7 @@ Connected to it is :
 - 1 USB 2.0 HDD used for parity
 - 2 USB 3.0 docks composed of 4 HDDs
   
-Most of my apps will be in docker containers, except system functions
+Most of my apps (Plex, Tranmission, AdGuard, Wireguard, HomeAssistant... ) will be in docker containers managed via CasaOS, except core system functions.
 
 ## Storage
 ### Mergerfs
